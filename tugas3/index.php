@@ -10,7 +10,7 @@
 <body>
   <div class='bg-blue-500 h-screen w-full flex justify-center items-center'>
     <!-- Form input plaintext dan key -->
-    <form action="enkcaesar.php" method="post" class="w-1/4 shadow-xl p-8 bg-white rounded-lg border flex flex-col">
+    <form action="enkcaesar.php" method="post" class="w-2/4 shadow-xl p-8 bg-white rounded-lg border flex flex-col">
       <h1 class='text-3xl font-bold text-center mb-6 text-gray-600'>Caesar Cipher</h1>
       <label class='text-lg mb-3' for="plain_text">Teks</label>
       <input type="text" class='mb-5 border focus:outline-none py-2 px-2' name='kata' id="plain_text">
