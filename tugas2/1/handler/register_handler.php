@@ -23,7 +23,7 @@ if (isset($_POST['name'], $_POST["username"], $_POST["email"], $_POST["password"
     header("Location: ../register.php");
     exit();
   }
-
+  
   $pattern = '/^(?=.*[!@#$%^&*-])(?=.*[0-9])(?=.*[A-Z]).{8,20}$/';
   if (!preg_match($pattern, $password)) {
     $_SESSION['error'] = "Password kurang kuat";

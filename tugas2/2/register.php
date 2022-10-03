@@ -81,7 +81,7 @@ session_start();
               }
               ?>
               <div class="mb-6 mt-6 text-center">
-                <button type="submit" id='submit' name="submit" class="w-full px-4 py-2 font-bold text-white bg-[#002D74] rounded-full hover:bg-blue-700 focus:outline-none duration-150 focus:shadow-outline" type="button">
+                <button type="submit" disabled id='submit' name="submit" class="w-full px-4 py-2 font-bold text-white bg-[#002D74]/50 rounded-full focus:outline-none duration-150 focus:shadow-outline" type="button">
                   Register Account
                 </button>
               </div>
@@ -97,7 +97,7 @@ session_start();
       </div>
     </div>
 
-    <script src='./js/script.js'></script>
+    <script src='js/script.js'></script>
   </body>
 </body>
 
