@@ -1,0 +1,21 @@
+{
+    "name": "ryan/tests-skd",
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "require-dev": {
+        "php": "^8.1",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Ryan Indrajaya",
+            "email": "sryan062@gmail.com"
+        }
+    ]
+}
