@@ -45,7 +45,7 @@ document.getElementById("plaintext").addEventListener(
     console.log("input", input);
 
     if (methodSelect.value !== "Silahkan pilih method...") {
-      const res = await fetch("/skd/uts/encrypt.php", {
+      const res = await fetch("encrypt.php", {
         method: "POST",
         body: JSON.stringify({
           text: input,
@@ -80,7 +80,7 @@ document.getElementById("plaintextDec").addEventListener(
     console.log("inputDec", inputDec);
 
     if (methodSelectDec.value !== "Silahkan pilih method...") {
-      const res = await fetch("/skd/uts/decrypt.php", {
+      const res = await fetch("decrypt.php", {
         method: "POST",
         body: JSON.stringify({
           text: inputDec,

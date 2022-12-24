@@ -23,19 +23,14 @@ if (isset($_POST['submit'])) {
   if (mysqli_num_rows($result) > 0) {
     $row = mysqli_fetch_assoc($result);
 
-    if ($row['status'] == 1) {
-      $_SESSION['username'] = $username;
-      $_SESSION['role'] = $row['role'];
-      $_SESSION['enc_method'] = $enc_method;
+    $_SESSION['username'] = $username;
+    $_SESSION['role'] = $row['role'];
+    $_SESSION['enc_method'] = $enc_method;
 
-      if ($row['role'] == 'admin') {
-        header("Location: ../index.php");
-      } else {
-        header("Location: ../index.php");
-      }
+    if ($row['role'] == 'admin') {
+      header("Location: ../index.php");
     } else {
-      $_SESSION['error'] = "Your account is not verified";
-      header("Location: ../login.php");
+      header("Location: ../index.php");
     }
   } else {
     $_SESSION['error'] = "Username or password is incorrect";

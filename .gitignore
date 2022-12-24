@@ -1,2 +1,5 @@
 uts/vendor
 uts/composer.lock
+uas/vendor
+uas/composer.lock
+uas/node_modules
