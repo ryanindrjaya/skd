@@ -68,7 +68,7 @@ session_start();
                 <label class="block mb-2 text-sm font-bold text-gray-700" for="email">
                   Password encryption method
                 </label>
-                <select class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" id="enc_method" name="enc_method" type="enc_method" placeholder="enc_method">
+                <select class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" id="enc_method" name="enc_method" type="text">
                   <option value="" selected disabled hidden>Pilih method...</option>
                   <option value="md5">MD5</option>
                   <option value="sha1">SHA1</option>
